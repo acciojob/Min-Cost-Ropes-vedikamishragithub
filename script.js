@@ -1,11 +1,15 @@
+let cost=0;
+ let sum=0;
+
+
 function mincost(arr)
 { 
 //write your code here
 	arr.sort(function(a, b){return a - b});
 	arr.forEach((item,i)=>{
-		 let sum+=item;
+		 sum+=item;
 		if(i>0){
-        let cost+=sum;
+         cost+=sum;
 		}
 	})
 	
