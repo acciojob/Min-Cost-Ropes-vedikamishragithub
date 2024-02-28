@@ -13,8 +13,8 @@ function mincost(arr)
 	
 
 // return the min cost
-	return mincost;
+	return cost;
   
 }
-
+mincost(arr);
 module.exports=mincost;
