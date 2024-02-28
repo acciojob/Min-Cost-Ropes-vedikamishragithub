@@ -3,9 +3,9 @@ function mincost(arr)
 //write your code here
 	arr.sort(function(a, b){return a - b});
 	arr.forEach((item,i)=>{
-		sum+=arr;
+		 let sum+=arr;
 		if(i<0){
-         cost+=sum;
+        let cost+=sum;
 		}
 	})
 	
