@@ -5,8 +5,8 @@ function mincost(arr) {
     let cost = 0;
     
     arr.sort(function(a, b){return a - b});
-    
-    while(arr.length > 1) {
+    arr.forEach(()=>{
+		while(arr.length > 1) {
         let sum = arr[0] + arr[1];
         cost += sum;
         
@@ -16,6 +16,8 @@ function mincost(arr) {
         
         // Sort the array again
         arr.sort(function(a, b){return a - b});
+	})
+  
     }
     
     return cost;
